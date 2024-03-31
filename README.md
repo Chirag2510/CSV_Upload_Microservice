@@ -1,4 +1,4 @@
-Install the dependancies using npm i or npm install
+Install the dependencies using npm i or npm install
 
 Import the Postman collection attached here to verify the microservices
 
