@@ -1,5 +1,7 @@
 Install the dependencies using **npm i** or **npm install**
 
+Start all three services using **npm start**
+
 Import the **Postman collection** attached here to verify the microservices
 
 **Sample CSV file** is also attached so you can use it in Postman collection while verification
