@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "2eaf0f9d-b140-49df-9764-45680f28c356",
+		"name": "CSV_Upload_Microservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15414543"
+	},
+	"item": [
+		{
+			"name": "Upload CSV File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csv",
+							"type": "file",
+							"src": "f7XJs6BrT/employee_data.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/upload",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Data Query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/employees?company=Johnson Enterprises&email=john.martinez@outlook.com&page=1&limit=10",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"employees"
+					],
+					"query": [
+						{
+							"key": "company",
+							"value": "Johnson Enterprises"
+						},
+						{
+							"key": "email",
+							"value": "john.martinez@outlook.com"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
