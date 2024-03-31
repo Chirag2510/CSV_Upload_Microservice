@@ -6,4 +6,4 @@ Import the **Postman collection** attached here to verify the microservices
 
 Used the **RabbitMQ** as message broker and used the localhost url **'amqp://localhost'** which is already mentioned in .env file
 
-Stored the data in **MySQL** database and used Sequelize for DB operations
+Stored the data in **MySQL** database and used **Sequelize** for DB operations
